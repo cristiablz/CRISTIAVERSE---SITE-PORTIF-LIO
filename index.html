@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CristiaVerse</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="cursor"></div>
+
+    <nav class="navbar">
+        <a href="#inicio" class="logo">CristiaVerse</a>
+
+        <div class="menu" id="menu">
+            <a href="#inicio">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contatos</a>
+        </div>
+
+        <button id="botaoTema">
+            <span id="iconeTema">&#9790;</span>
+            <span id="textoBotao">Modo claro</span>
+        </button>
+
+        <button id="botaoMenu">&#9776;</button>
+    </nav>
+
+    <section id="inicio">
+        <div class="inicio-texto">
+            <p>PORTFÓLIO PESSOAL</p>
+            <h1>Olá, eu sou <span>Cristhian.</span></h1>
+            <h2>Estudante de Engenharia de Software</h2>
+            <p>Tenho interesse em tecnologia, desenvolvimento e criação de soluções digitais. Este é meu espaço para apresentar projetos e compartilhar minha evolução.</p>
+            <a href="#projetos" class="botao">Ver projetos</a>
+            <a href="#sobre" class="botao botao-secundario">Sobre mim</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="secao">
+        <h2>Sobre mim</h2>
+        <p>Sou estudante de Engenharia de Software e estou construindo minha jornada na área de tecnologia. Tenho interesse em desenvolvimento web, programação e soluções que facilitem o dia a dia.</p>
+    </section>
+
+    <section id="habilidades" class="secao">
+        <h2>Habilidades</h2>
+        <div class="habilidades">
+            <div class="habilidade"><h3>HTML</h3><p>Estrutura de páginas</p></div>
+            <div class="habilidade"><h3>CSS</h3><p>Estilização de interfaces</p></div>
+            <div class="habilidade"><h3>Bootstrap</h3><p>Layouts responsivos</p></div>
+            <div class="habilidade"><h3>JavaScript</h3><p>Interatividade</p></div>
+            <div class="habilidade"><h3>C</h3><p>Lógica de programação</p></div>
+            <div class="habilidade"><h3>SQL</h3><p>Banco de dados</p></div>
+        </div>
+    </section>
+
+    <section id="projetos" class="secao">
+        <h2>Projetos recentes</h2>
+
+        <div id="carouselStacked" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselStacked" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselStacked" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselStacked" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner rounded-4">
+                <div class="carousel-item active">
+                    <div class="imagem-projeto">
+                        <img src="img/img_cine.png" alt="Projeto Cine Pirataria">
+                    </div>
+                    <div class="descricao-projeto">
+                        <h3>Cine Pirataria</h3>
+                        <p>Projeto acadêmico voltado para a prática de HTML, CSS e Bootstrap, explorando a construção e organização de interfaces web.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="imagem-projeto">
+                        <img src="img/funeraria.png" alt="Projeto 2">
+                    </div>
+                    <div class="descricao-projeto">
+                        <h3>Projeto de Banco de Dados – Sistema de Gestão Funerária</h3>
+                        <p>Projeto de banco de dados desenvolvido para uma funerária, com tabelas e relacionamentos para gerenciar clientes, funcionários, falecidos, contratos, produtos e serviços, aplicando conceitos de modelagem e organização de dados relacionais.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="imagem-projeto">
+                        <img src="img/dbf1.png" alt="Projeto 3">
+                    </div>
+                    <div class="descricao-projeto">
+                        <h3>Banco de Dados – Sistema de Gerenciamento da Fórmula 1</h3>
+                        <p>Projeto de banco de dados em MySQL para um sistema de Fórmula 1, com tabelas relacionadas a países, equipes, corridas, pilotos e participantes. Desenvolvido para organizar informações e relacionamentos, aplicando conceitos de modelagem relacional, chaves primárias e estrangeiras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselStacked" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselStacked" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section id="contato" class="secao contato">
+        <h2>Contato</h2>
+        <p>Quer conversar ou conhecer mais sobre meus projetos?</p>
+        <a href="https://github.com/cristiablz" target="_blank" class="botao botao-secundario">GitHub</a>
+        <a href="https://www.linkedin.com/in/cristhian-lopes-614a94430 " target="_blank" class="botao botao-secundario">LinkedIn</a>
+    </section>
+
+    <footer>
+        <p>CristiaVerse · Desenvolvido por Cristhian Lopes· 2026</p>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
